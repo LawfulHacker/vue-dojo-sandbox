@@ -1,0 +1,134 @@
+{
+    "root": true,
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 5,
+        "sourceType": "script",
+        "ecmaFeatures": {}
+    },
+    "env": {
+        "amd": true,
+        "browser": true,
+        "node": true,
+        "worker": true
+    },
+    "globals": {
+        "logger": true,
+        "StxError": true
+    },
+    "rules": {
+        "block-scoped-var": "error",
+        "consistent-return": "error",
+        "curly": ["error", "all"],
+        "dot-notation": ["error", { "allowKeywords": false }],
+        "eqeqeq": "error",
+        "no-caller": "error",
+        "no-console": "off",
+        "no-extra-parens": ["error", "all"],
+        "no-prototype-builtins": "error",
+        "no-undef-init": "error",
+        "no-undefined": "error",
+        "no-use-before-define": [
+            "error",
+            {
+                "functions": false,
+                "classes": false,
+                "variables": true
+            }
+        ],
+        "no-useless-call": "error",
+        "no-useless-return": "error",
+        "valid-jsdoc": "error",
+        "comma-style": ["warn", "last", {
+            "exceptions": {}
+        }],
+        "comma-spacing": ["warn", {
+            "before": false,
+            "after": true
+        }],
+        "consistent-this": ["warn", "_this"],
+        "func-call-spacing": ["warn", "never"],
+        "function-paren-newline": [ "warn", "consistent" ],
+        "indent": [
+            "warn",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "key-spacing": [
+            "warn",
+            {
+                "afterColon": true,
+                "beforeColon": false
+            }
+        ],
+        "keyword-spacing": [
+            "warn",
+            {
+                "after": true,
+                "before": true
+            }
+        ],
+        "new-parens": "error",
+        "no-trailing-spaces": "warn",
+        "no-lonely-if": "warn",
+        "max-len": [
+            "warn",
+            {
+                "code": 120,
+                "tabWidth": 4,
+                "ignoreTrailingComments": true,
+                "ignoreStrings": true
+            }
+        ],
+        "one-var-declaration-per-line": ["error", "initializations"],
+        "quotes": ["warn", "single"],
+        "quote-props": ["error", "as-needed", { "keywords": true }],
+        "require-jsdoc": [
+            "warn",
+            {
+                "require": {
+                    "FunctionDeclaration": true,
+                    "MethodDefinition": false,
+                    "ClassDeclaration": false,
+                    "ArrowFunctionExpression": false,
+                    "FunctionExpression": false
+                }
+            }
+        ],
+        "semi": ["error", "always"],
+        "semi-spacing": ["error", {
+            "before": false,
+            "after": true
+        }],
+        "semi-style": ["warn", "last"],
+        "space-before-blocks": [
+            "warn",
+            {
+                "functions": "always",
+                "keywords": "always",
+                "classes": "always"
+            }
+        ],
+        "space-before-function-paren": ["warn", {
+            "anonymous": "never",
+            "named": "never",
+            "asyncArrow": "never"
+        }],
+        "space-in-parens": ["error", "never"],
+        "switch-colon-spacing": ["error", {
+            "after": true,
+            "before": false
+        }],
+        "unicode-bom": ["error", "never"]
+    },
+    "overrides": [
+        {
+            "files": ["*-tests.js"],
+            "rules": {
+                "dot-notation": ["error", { "allowKeywords": true }]
+            }
+        }
+    ]
+}
