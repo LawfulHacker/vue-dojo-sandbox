@@ -18,6 +18,7 @@
     },
     "rules": {
         "block-scoped-var": "error",
+        "comma-dangle": ["error", "never"],
         "consistent-return": "error",
         "curly": ["error", "all"],
         "dot-notation": ["error", { "allowKeywords": false }],

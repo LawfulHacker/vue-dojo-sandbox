@@ -11,6 +11,20 @@ module.exports = {
     module: {
         rules: [
             {
+                enforce: "pre",
+                test: /\.scss$/,
+                exclude: /node_modules/,
+                loader: "import-glob-loader"
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    "style-loader", // creates style nodes from JS strings
+                    "css-loader", // translates CSS into CommonJS
+                    "sass-loader" // compiles Sass to CSS
+                ]
+            },
+            {
                 test: /\.html$/,
                 use: [
                     {

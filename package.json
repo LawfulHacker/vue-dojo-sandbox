@@ -12,10 +12,15 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "css-loader": "^1.0.0",
         "eslint": "^5.2.0",
         "eslint-loader": "^2.1.0",
         "html-loader": "^0.5.5",
+        "import-glob-loader": "^1.1.0",
         "imports-loader": "^0.8.0",
+        "node-sass": "^4.9.2",
+        "sass-loader": "^7.0.3",
+        "style-loader": "^0.21.0",
         "webpack": "^4.16.2",
         "webpack-cli": "^3.1.0",
         "webpack-dev-server": "^3.1.5"
